@@ -5,8 +5,8 @@ from sqlalchemy.dialects.mysql import JSON
 class Result(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     url = db.Column(db.String(1024))
-    result_all = db.Column(db.String(1024))
-    result_no_stop_words = db.Column(db.String(1024))
+    result_all = db.Column(JSON)
+    result_no_stop_words = db.Column(JSON)
 
     def __init__(self,url,result_all,result_no_stop_words):
         self.url = url
