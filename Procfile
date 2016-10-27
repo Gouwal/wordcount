@@ -1,1 +1,1 @@
-web: gunicorn app:wordcount
+web: gunicorn run:app
