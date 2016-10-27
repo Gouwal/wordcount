@@ -7,7 +7,8 @@ class Config(object):
     TESTING = False
     CRSF_ENABLED = True
     SECRET_KEY = "wangpl9203"
-    SQLALCHEMY_DATABASE_URI = "mysql+mysqldb://root:wangpl9203@localhost/wangpenglin"
+    #SQLALCHEMY_DATABASE_URI = "mysql+mysqldb://root:wangpl9203@localhost/wangpenglin"
+    SQLALCHEMY_DATABASE_URI = os.environ['CLEARDB_DATABASE_URL']
 
 
 class ProductionConfig(Config):
