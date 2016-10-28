@@ -1,6 +1,6 @@
 from . import db
-from sqlalchemy.dialects.mysql import JSON
-
+from sqlalchemy.dialects.postgresql import JSON
+from sqlalchemy.types import Text
 
 class Result(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
