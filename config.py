@@ -8,6 +8,7 @@ class Config(object):
     CRSF_ENABLED = True
     SECRET_KEY = "wangpl9203"
     SQLALCHEMY_DATABASE_URI = os.environ['CLEARDB_DATABASE_URL']
+    SQLALCHEMY_TRACK_MODIFICATIONS=True
 
 
 class ProductionConfig(Config):
