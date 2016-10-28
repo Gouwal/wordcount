@@ -1,0 +1,4 @@
+*.pyc
+start.sh
+kill.sh
+
